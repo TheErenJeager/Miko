@@ -4,15 +4,33 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+      time: "06:00"
     open-pull-requests-limit: 10
-    allow:
-      - dependency-type: "all"
-    labels:
-      - "dependencies"
+    commit-message:
+      prefix: "⬆️ pip"
+      include: "scope"
+    rebase-strategy: "auto"
+    reviewers:
+      - "TheErenYeagerx"
+
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "daily"
-    open-pull-requests-limit: 5
-    labels:
-      - "dependencies"
+    commit-message:
+      prefix: "🔧 actions"
+      include: "scope"
+    rebase-strategy: "auto"
+    reviewers:
+      - "TheErenYeagerx"
+
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    commit-message:
+      prefix: "🐳 docker"
+      include: "scope"
+    rebase-strategy: "auto"
+    reviewers:
+      - "TheErenYeagerx"
