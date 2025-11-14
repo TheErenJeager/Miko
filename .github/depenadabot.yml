@@ -11,7 +11,7 @@ updates:
       include: "scope"
     rebase-strategy: "auto"
     reviewers:
-      - "TheErenYeagerx"
+      - "TheErenJeager"
 
   - package-ecosystem: "github-actions"
     directory: "/"
@@ -22,7 +22,7 @@ updates:
       include: "scope"
     rebase-strategy: "auto"
     reviewers:
-      - "TheErenYeagerx"
+      - "TheErenJeager"
 
   - package-ecosystem: "docker"
     directory: "/"
@@ -33,4 +33,4 @@ updates:
       include: "scope"
     rebase-strategy: "auto"
     reviewers:
-      - "TheErenYeagerx"
+      - "TheErenJeager"
